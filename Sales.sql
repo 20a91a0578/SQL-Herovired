@@ -5,7 +5,7 @@ create table Salesman(
 salesman_id number(4)  primary key,
 name varchar2(20),
 city varchar2(20),
-commisssion number(5));
+commisssion float );
 
 insert into Salesman values(5001,'James Hoog','NewYork',0.15);
 
