@@ -1,0 +1,18 @@
+SQL>declare
+  2  i number;
+  3  n number;
+  4  s number;
+  5  begin
+  6  i:=1;
+  7  n:=&n;
+  8  s:=0;
+  9  while i<=n
+ 10  loop
+ 11  s:=s+i;
+ 12  i:=i+1;
+ 13  end loop;
+ 14  dbms_output.put_line('sum of first '||n||' numbers = '||s);
+ 15  end;
+ 16  /
+Enter value for n: 10
+sum of first 10 numbers = 55
